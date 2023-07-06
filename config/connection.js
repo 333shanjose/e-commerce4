@@ -3,8 +3,8 @@ const status={
     db:null
 }
 module.exports.connect=function(done){
-    const url="mongodb://127.0.0.1:27017"
-    const dbname="product"
+    const url='mongodb+srv://mernstack-user1:mernstack-user1@cluster0.oeca437.mongodb.net/?retryWrites=true&w=majority'
+   
 
  mongoClient.connect(url,(err,data)=>{
      
