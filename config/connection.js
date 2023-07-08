@@ -4,7 +4,7 @@ const status={
 }
 module.exports.connect=function(done){
     const url='mongodb+srv://mernstack-user1:mernstack-user1@cluster0.oeca437.mongodb.net/?retryWrites=true&w=majority'
-   
+    const dbname='product'
 
  mongoClient.connect(url,(err,data)=>{
      
