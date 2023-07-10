@@ -103,7 +103,7 @@ router.post('/addproduct',(req,res)=>{
        let image=req.files.images
           
           
-       image.mv('./client/public/productimages/'+id+'.jpg',(error)=>{
+       image.mv('./client/build/productimages/'+id+'.jpg',(error)=>{
           if(!error){
             console.log('sucessfull')
           }else{
