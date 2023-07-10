@@ -8,7 +8,7 @@ const userhelper=require('../helpers/userhelper');
 router.get('/',function(req, res) {
   
    
-  
+  console.log('user')
     
     
     producthelpers.getAllProducts().then((res)=>{
