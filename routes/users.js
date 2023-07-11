@@ -12,7 +12,7 @@ router.get('/',function(req, res) {
     
     
     producthelpers.getAllProducts().then((res)=>{
-      
+       console.log(res)
        products=res
     })
       res.json(products)
