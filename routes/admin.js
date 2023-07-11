@@ -6,6 +6,7 @@ var router=express.Router();
 
 
 router.get('/', function(req,res,next){
+  console.log('football')
   let ad=req.session.admin
   console.log(ad)
     
