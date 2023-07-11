@@ -22,8 +22,14 @@ app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname,  'public')));
 app.use(fileUpload())
-app.use(cors())
+
 app.use(session({secret:'key',cookie:{maxAge:900000}}))
+app.use(
+  cors({
+    origin: ["http://localhost:3000", "https://e-commerce11-lzp1.onrender.com],
+
+      })
+  )
 
 db.connect((err)=>{
   if(err)  console.log('error'+err);
