@@ -34,7 +34,7 @@ db.connect((err)=>{
 
 })
 
-app.use('/', usersRouter)
+app.use('/users', usersRouter)
 app.use('/admins', indexRouter);
 
 //static files
