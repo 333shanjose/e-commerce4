@@ -26,7 +26,7 @@ app.use(fileUpload())
 app.use(session({secret:'key',cookie:{maxAge:900000}}))
 app.use(
   cors({
-    origin: "http://localhost:3000"
+    origin:['https://e-commerce1-pe4o.onrender.com']
 
       })
   )
