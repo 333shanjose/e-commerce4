@@ -35,7 +35,7 @@ db.connect((err)=>{
 })
 
 app.use('/', usersRouter)
-app.use('/admin', indexRouter);
+app.use('/admins', indexRouter);
 
 //static files
  app.use(express.static(path.join(__dirname,'./client/build')))
