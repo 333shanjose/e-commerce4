@@ -24,12 +24,7 @@ app.use(express.static(path.join(__dirname,  'public')));
 app.use(fileUpload())
 
 app.use(session({secret:'key',cookie:{maxAge:900000}}))
-app.use(
-  cors({
-    origin:['https://e-commerce1-pe4o.onrender.com']
 
-      })
-  )
 
 db.connect((err)=>{
   if(err)  console.log('error'+err);
