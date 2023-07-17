@@ -3,6 +3,6 @@ module.exports={
     ADMIN_COLLECTION:"bdssml",
     USER_COLLECTIONS:"userskr",
     CART_COLLECTIONS :"carttttksh",
-    ORDER_COLLECTIONS:"ordersnek"
+    ORDER_COLLECTIONS:"ordersnekl"
 
 }
