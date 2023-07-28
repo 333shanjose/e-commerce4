@@ -22,8 +22,14 @@ app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname,  'public')));
 app.use(fileUpload())
+app.use(session({
+  secret: 'its my secret',
+  cookie: { maxAge: 600000 }, // value of maxAge is defined in milliseconds. 
+  resave: false,
+  rolling: false,
+  saveUninitialized: true
+}))
 
-app.use(session({secret:'key',cookie:{maxAge:900000}}))
 
 
 db.connect((err)=>{
