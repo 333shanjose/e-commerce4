@@ -204,12 +204,14 @@ getOrderdetails:()=>{
         resolve(orderdetails)
     })
  },
- getorderProducts:()=>{
+ getorderProducts:(name)=>{
     return new Promise(async(resolve,reject)=>{
           
         
         let products=await db.get().collection(collections.ORDER_COLLECTIONS).aggregate([
-            
+             {
+                $match:{username:name}
+            },
             {
                 $unwind:'$products'
             },
