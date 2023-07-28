@@ -27,9 +27,9 @@ router.get('/', function(req,res,next){
       
     }
   });
-  router.get('/orderproductss',async(req,res)=>{
+  router.get('/orderproductss/:name',async(req,res)=>{
        
-    let products=await userhelper.getorderProducts()
+    let products=await userhelper.getorderProducts(req.params.name)
     res.json({products})
   })
     router.post('/signup',(req,res)=>{
