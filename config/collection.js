@@ -1,8 +1,8 @@
 module.exports={
-    PRODUCT_HELPERS:"nameeeskk",
-    ADMIN_COLLECTION:"bdssml",
-    USER_COLLECTIONS:"userskr",
-    CART_COLLECTIONS :"carttttkshkslh",
-    ORDER_COLLECTIONS:"ordersneklrnhk"
+    PRODUCT_HELPERS:"nameeeskks",
+    ADMIN_COLLECTION:"bdssmlh",
+    USER_COLLECTIONS:"userskrl",
+    CART_COLLECTIONS :"carttttkshkslhm",
+    ORDER_COLLECTIONS:"ordersneklrnhks"
 
 }
