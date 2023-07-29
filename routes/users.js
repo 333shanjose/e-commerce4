@@ -55,7 +55,7 @@ router.get('/',function(req, res) {
     }
      
     });
-    router.get('/logout',function(req,res){
+    router.get('/logoutt',function(req,res){
   
       req.session.user=null
       
