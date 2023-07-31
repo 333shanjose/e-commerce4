@@ -55,6 +55,18 @@ router.get('/',function(req, res) {
     }
      
     });
+      router.get('/productt/:id',function(req, res) {
+  
+   
+  
+      
+      
+      producthelpers.getProduct(req.params.id).then((res)=>{
+          
+        
+         product=res
+      })
+        res.json(product)
     router.get('/logoutt',function(req,res){
   
       req.session.user=null
