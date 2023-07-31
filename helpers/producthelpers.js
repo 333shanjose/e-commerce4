@@ -64,6 +64,13 @@ getAllProducts:()=>{
      resolve(products)
   })
 },
+ getProduct:(proId)=>{
+  return new Promise(async(resolve,reject)=>{
+     let product=await db.get().collection(collections.PRODUCT_HELPERS).findOne({_id:objectId(proId)})
+     
+     resolve(product)
+  })
+},
 deleteproduct:(proId)=>{
   return new Promise((resolve,reject)=>{
      db.get().collection(collections.PRODUCT_HELPERS).deleteOne({_id:objectId(proId)}).then((response)=>{
