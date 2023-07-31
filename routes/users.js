@@ -67,6 +67,7 @@ router.get('/',function(req, res) {
          product=res
       })
         res.json(product)
+      })
     router.get('/logoutt',function(req,res){
   
       req.session.user=null
